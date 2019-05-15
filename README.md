@@ -39,11 +39,21 @@ Just for clarification, an item can never have its Quality increase above 50, ho
 
 Preparation
 ======================================
-Create user "dojo" and connect with him for create all database objects
+Steps for prepare database:
 
-`execute create_user_if_needed.sql`
+Create user "gildedrose" with user System.
 
-for run tests you should install utPlsql v3.1.6 and run this script:
+1) CHANGES/create_user_if_needed.sql
+
+and connect with him for create all database objects
+
+2) CHANGES/item.sql
+3) PROCEDURE/new_item.sql
+4) PROCEDURE/update_quality.sql
+5) PACKAGE_SPEC/test_update_quality.sql
+6) PACKAGE_BODY/test_update_quality.sql
+
+for run tests (you should install utPlsql v3.1.6):
 
 `begin ut.run(); end;`
 
