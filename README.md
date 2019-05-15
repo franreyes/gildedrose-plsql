@@ -41,9 +41,9 @@ Preparation
 ======================================
 Create user "dojo" and connect with him for create all database objects
 
-execute create_user_if_needed.sql
+`execute create_user_if_needed.sql`
 
 for run tests you should install utPlsql v3.1.6 and run this script:
 
-begin ut.run(); end;
+`begin ut.run(); end;`
 
