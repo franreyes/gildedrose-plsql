@@ -9,3 +9,4 @@ IS
   --%test(First test)
   PROCEDURE foo;
 END test_update_quality;
+/

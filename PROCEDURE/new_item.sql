@@ -6,3 +6,4 @@ IS
 BEGIN
   INSERT INTO item (name, sell_in, quality) VALUES (i_name, i_sell_in, i_quality);
 END new_item;
+/

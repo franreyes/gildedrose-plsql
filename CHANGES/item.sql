@@ -5,11 +5,9 @@ CREATE TABLE item
     sell_in NUMBER(6) NOT NULL,
     quality NUMBER(6) NOT NULL
   );
-/
 
 ALTER TABLE item ADD (
   CONSTRAINT item_pk PRIMARY KEY (ID));
-/
 
 CREATE SEQUENCE item_id_seq
   INCREMENT BY 1
@@ -17,7 +15,6 @@ CREATE SEQUENCE item_id_seq
   MAXVALUE 999999
   MINVALUE 1
   NOCYCLE;
-/
 
 CREATE OR REPLACE TRIGGER item_bis_trg
   BEFORE INSERT ON item
@@ -25,4 +22,5 @@ CREATE OR REPLACE TRIGGER item_bis_trg
 BEGIN
     SELECT item_id_seq.NEXTVAL INTO :new.id FROM dual;
 END;
+
 /

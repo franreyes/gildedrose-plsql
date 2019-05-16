@@ -19,3 +19,4 @@ IS
   END foo;
 
 END test_update_quality;
+/

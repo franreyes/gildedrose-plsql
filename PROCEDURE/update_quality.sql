@@ -63,3 +63,4 @@ BEGIN
       SET name = l_name, sell_in = l_sell_in, quality = l_quality WHERE CURRENT OF c_items;
   END LOOP;
 END update_quality;
+/
